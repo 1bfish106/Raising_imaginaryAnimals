@@ -12,7 +12,7 @@ public class AnimalManager {
         // 반환타입을 애니멀로 지정
 
         Animal a2 = null;
-        //해당 변수가 모든 동물 클래스의 인스턴스를 참조하기 위해서 초기화
+        //해당 변수가 모든 동물 클래스의 인스턴스를 참조하기 위해서 초기화..
 
         Random random = new Random();
         int randomIndex = random.nextInt(4);
