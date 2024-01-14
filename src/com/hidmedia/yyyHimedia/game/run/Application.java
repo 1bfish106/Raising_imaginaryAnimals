@@ -15,6 +15,7 @@ public class Application {
         sc.nextLine(); //게임에서 시각적으로 효과를 주기위해 엔터를 누르면 동물이 나오게 설정
         AnimalManager animalManager = new AnimalManager();
         Animal a1 = animalManager.randomAnimal();
+        //애니멀매니저의 반환타입이 애니멀이기 때문에 애니멀타입으로 선언
 
         //처음엔 주운알은 동물의 종족이 무엇인지 나오게 했고
         //동물의 이름을 입력하면 그 이후는 종족이 아니고 입력한 이름을 불러오기위해
@@ -60,6 +61,9 @@ public class Application {
             System.out.println("현재까지 " + name2 + "의 행동 횟수: " + a1.getCount() + "입니다.");
 
             if (a1.getCount() == 11) {
+                //인스턴스오브를 사용한이유 : 떠나간다는 leave로 한번에 애니멀클래스에 만들수있었지만
+                //각각 동물들이 어떻게 떠나갈것인지에 대해 나눠서 표현하고싶었고
+                //다향성을 더 활용해보기 위해 사용
                 System.out.println("!!!!!!!!!!!!!" + name2 + "(이)가 성체가 되어 떠납니다!!!!!!!!!!! ㅃ2~!!");
                 if(a1 instanceof Alien){
                     ((Alien)a1).leave();
