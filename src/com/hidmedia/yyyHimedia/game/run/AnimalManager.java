@@ -7,12 +7,13 @@ import java.util.Random;
 public class AnimalManager {
 
     public Animal randomAnimal() {
-        // 애니멀매니저 클래스는 4가지 동물들을 랜덤을 돌려 한마리 지정해야하는 클래스
-        // 모든동물들이 애니멀클래스에 상속이 되어있어서 그걸 반환해야하니
+        // 애니멀매니저 클래스는 Animal 클래스와 관련된 메소드를 관리하는 클래스
+        // randomAnimal() 4가지 동물 중 랜덤으로 한 종류를 반환하는 메소드
+        // 모든동물들이 애니멀클래스에 상속이 되어있고 그 객체를 반환해야하니
         // 반환타입을 애니멀로 지정
 
         Animal a2 = null;
-        //해당 변수가 모든 동물 클래스의 인스턴스를 참조하기 위해서 초기화..
+        //해당 변수가 참조할 객체가 아직 생성되어 있지 않으므로 레퍼런스 변수를 null값으로 초기화
 
         Random random = new Random();
         int randomIndex = random.nextInt(4);

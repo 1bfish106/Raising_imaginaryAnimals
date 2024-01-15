@@ -10,7 +10,7 @@ public class Alien extends Animal {
         return "외계인";
     }
     //알이 랜덤으로 부화해서 그알이 누구의 알이었는지 toString 으로 name객체의 이름을 반환
-    //그리고 사용자가 지정한 이름을 getname()으로 받아서 이름이 어떤행동을 한다로 실행
+    //그리고 사용자가 지정한 이름을 setname()으로 받아서 이름이 어떤행동을 한다로 실행
     @Override
     public void wash() {
         System.out.println(getName()+" 이 샤워해서 청결해졌습니다. 하얘졌다!");
